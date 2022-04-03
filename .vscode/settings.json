@@ -1,0 +1,7 @@
+{
+    "rust-analyzer.server.path": "/usr/bin/rust-analyzer",
+    "rust-analyzer.cargo.target": "x86_64-pc-windows-gnu",
+    "editor.rulers": [
+        120
+    ]
+}

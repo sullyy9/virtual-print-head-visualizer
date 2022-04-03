@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "shell",
+            "command": "cargo build --verbose",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "label": "rust: cargo build debug linux"
+        },
+        {
+            "type": "shell",
+            "command": "cargo build --target=x86_64-pc-windows-gnu",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "label": "rust: cargo build debug windows"
+        },
+        {
+            "type": "shell",
+            "command": "cargo build --release",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "label": "rust: cargo build release linux"
+        },
+        {
+            "type": "shell",
+            "command": "cargo build --target=x86_64-pc-windows-gnu --release",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "label": "rust: cargo build release windows"
+        }
+    ]
+}
